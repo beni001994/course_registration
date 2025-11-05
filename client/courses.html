@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection - USIU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Course Registration</a>
+            <div class="nav-links" id="nav-links">
+                <!-- Dynamic links added by navbar.js -->
+            </div>
+            <div class="nav-account">
+                <span id="nav-user-name" class="user-greeting"></span>
+                <button id="nav-logout-btn" class="btn btn-nav">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container container-wide">
+        <div class="header">
+            <div class="logo-badge">USIU</div>
+            <h1>Course Selection</h1>
+            <p class="subtitle">Select your courses and assign lecturers (Maximum 5 courses)</p>
+            <div class="user-info">
+                <span id="user-name"></span>
+                <a href="#" id="logout-link" class="link">Sign Out</a>
+            </div>
+        </div>
+        <form id="course-selection-form">
+            <div id="course-entries" class="course-entries"></div>
+            <div class="action-buttons">
+                <button type="button" id="add-course-btn" class="btn btn-secondary">
+                    <span class="btn-icon">+</span> Add Course
+                </button>
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 United States International University. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="toast.js"></script>
+    <script src="navbar.js"></script>
+    <script src="course-selection.js"></script>
+</body>
+</html>

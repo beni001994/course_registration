@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - USIU Course Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="index.html" class="nav-logo">Course Registration</a>
+        <div class="nav-links" id="nav-links">
+          <!-- Dynamic links added by navbar.js -->
+        </div>
+        <div class="nav-account">
+          <span
+            id="nav-user-name"
+            class="user-greeting"
+            style="display: none"
+          ></span>
+          <button
+            id="nav-login-btn"
+            class="btn btn-nav"
+            onclick="window.location.href='login.html'"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header">
+        <div class="logo-badge">USIU</div>
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Sign in to continue to course registration</p>
+      </div>
+      <form id="login-form">
+        <div class="input-group">
+          <label for="login-email">Email Address</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="your.email@usiu.ac.ke"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+      <div class="form-footer">
+        <p>
+          Don't have an account?
+          <a href="register.html" class="link">Create Account</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          &copy; 2025 United States International University. All rights
+          reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="toast.js"></script>
+    <script src="navbar.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

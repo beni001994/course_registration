@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - USIU Course Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Course Registration</a>
+            <div class="nav-links" id="nav-links">
+                <!-- Dynamic links added by navbar.js -->
+            </div>
+            <div class="nav-account">
+                <span id="nav-user-name" class="user-greeting" style="display: none;"></span>
+                <button id="nav-login-btn" class="btn btn-nav" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-badge">USIU</div>
+            <h1>Create Account</h1>
+            <p class="subtitle">Register to access the course selection system</p>
+        </div>
+        <form id="registration-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="reg-firstname">First Name</label>
+                    <input type="text" id="reg-firstname" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-lastname">Last Name</label>
+                    <input type="text" id="reg-lastname" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="reg-idnumber">Student ID Number</label>
+                <input type="text" id="reg-idnumber" placeholder="Enter your student ID" required>
+            </div>
+            <div class="input-group">
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" placeholder="your.email@usiu.ac.ke" required>
+            </div>
+            <div class="input-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" placeholder="Create a strong password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+        <div class="form-footer">
+            <p>Already have an account? <a href="login.html" class="link">Sign In</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 United States International University. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="toast.js"></script>
+    <script src="navbar.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

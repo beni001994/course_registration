@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Summary - USIU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Course Registration</a>
+            <div class="nav-links" id="nav-links">
+                <!-- Dynamic links added by navbar.js -->
+            </div>
+            <div class="nav-account">
+                <span id="nav-user-name" class="user-greeting"></span>
+                <button id="nav-logout-btn" class="btn btn-nav">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container container-wide">
+        <div class="header">
+            <div class="logo-badge success">✓</div>
+            <h1>Registration Complete!</h1>
+            <p class="subtitle">Your course registration has been successfully saved</p>
+        </div>
+        <div id="summary-content" class="summary-content"></div>
+        <div class="action-buttons">
+            <button id="back-to-courses-btn" class="btn btn-secondary">Edit Registration</button>
+            <button id="logout-btn" class="btn btn-outline">Sign Out</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 United States International University. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="toast.js"></script>
+    <script src="navbar.js"></script>
+    <script src="summary.js"></script>
+</body>
+</html>
